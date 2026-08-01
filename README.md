@@ -106,7 +106,9 @@ Panduan lebih detail (termasuk troubleshooting) ada di [`TUTORIAL.md`](TUTORIAL.
 
 ## 📸 Contoh Output
 
-> Tambahkan screenshot dashboard kamu di sini setelah dijalankan, misalnya:
+> `![Dashboard](assets/dashboard-1.png)`
+> `![Dashboard](assets/dashboard-screenshot.png)`
+> `![Dashboard](assets/dashboard-screenshot.png)`
 > `![Dashboard](assets/dashboard-screenshot.png)`
 
 ## 🔮 Pengembangan Lanjutan
