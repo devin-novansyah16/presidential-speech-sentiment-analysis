@@ -121,4 +121,3 @@ Panduan lebih detail (termasuk troubleshooting) ada di [`TUTORIAL.md`](TUTORIAL.
 
 ---
 
-**Dibuat sebagai proyek portofolio Data Science / NLP.**
