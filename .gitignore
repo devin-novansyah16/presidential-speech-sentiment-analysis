@@ -5,9 +5,6 @@ venv/
 .venv/
 env/
 
-# Output hasil generate pipeline (tidak perlu di-commit, bisa dibuat ulang)
-data/pidato_analyzed.csv
-
 # OS
 .DS_Store
 Thumbs.db
