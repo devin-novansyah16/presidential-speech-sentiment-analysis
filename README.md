@@ -107,6 +107,7 @@ Panduan lebih detail (termasuk troubleshooting) ada di [`TUTORIAL.md`](TUTORIAL.
 ## 📸 Contoh Output
 
 > ![Dashboard](assets/dashboard-1.png)
+> ![Dashboard](assets/dashboard-2.png)
 
 ## 🔮 Pengembangan Lanjutan
 
