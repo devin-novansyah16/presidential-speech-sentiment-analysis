@@ -16,7 +16,15 @@ interaktif siap pakai.
 > kabinet, dll). Ini **bukan** proyek penilaian atau opini politik.
 
 ---
+## 🚀 Live Demo
 
+Coba langsung dashboard-nya di sini tanpa perlu install apa pun:
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://presidential-speech-sentiment-analysis.streamlit.app/)
+
+👉 **[presidential-speech-sentiment-analysis.streamlit.app](https://presidential-speech-sentiment-analysis.streamlit.app/)**
+
+---
 ## 📌 Daftar Isi
 
 - [Fitur](#-fitur)
