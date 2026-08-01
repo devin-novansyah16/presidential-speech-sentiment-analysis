@@ -51,15 +51,24 @@ st.dataframe(per_doc, hide_index=True, use_container_width=True)
 
 st.subheader("Word Cloud")
 sentiment_choice = st.selectbox("Pilih label sentimen", ["positif", "negatif", "netral"])
-text_subset = " ".join(df[df["sentiment_label"] == sentiment_choice]["clean_text_nostop"].astype(str))
-if text_subset.strip():
-    wc = WordCloud(width=900, height=400, background_color="white").generate(text_subset)
-    fig, ax = plt.subplots(figsize=(10, 4))
-    ax.imshow(wc, interpolation="bilinear")
-    ax.axis("off")
-    st.pyplot(fig)
+
+# Ambil subset teks untuk label terpilih, buang nilai kosong (NaN) dulu supaya
+# tidak error saat di-join -- label "netral" seringkali datanya sedikit/kosong
+# karena skor lexicon jarang persis 0.
+subset_series = df.loc[df["sentiment_label"] == sentiment_choice, "clean_text_nostop"].dropna()
+text_subset = " ".join(subset_series.astype(str))
+
+if subset_series.empty or not text_subset.strip():
+    st.info(f"Belum ada kalimat dengan label '{sentiment_choice}' pada data ini.")
 else:
-    st.info("Tidak ada teks untuk label ini.")
+    try:
+        wc = WordCloud(width=900, height=400, background_color="white").generate(text_subset)
+        fig, ax = plt.subplots(figsize=(10, 4))
+        ax.imshow(wc, interpolation="bilinear")
+        ax.axis("off")
+        st.pyplot(fig)
+    except ValueError:
+        st.info(f"Teks untuk label '{sentiment_choice}' terlalu sedikit untuk membuat word cloud.")
 
 st.subheader("Topik Utama (LDA)")
 n_topics = st.slider("Jumlah topik", 2, 10, 5)
