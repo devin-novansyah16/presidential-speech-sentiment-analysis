@@ -77,7 +77,7 @@ pidato-sentiment/
 
 ```bash
 # 1. Clone repo ini
-git clone https://github.com/<username-kamu>/pidato-sentiment.git
+git clone https://github.com/<devin-novansyah16>/pidato-sentiment.git
 cd pidato-sentiment
 
 # 2. Install dependencies
