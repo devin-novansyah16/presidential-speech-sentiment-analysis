@@ -1,0 +1,8 @@
+requests
+beautifulsoup4
+pandas
+Sastrawi
+scikit-learn
+wordcloud
+matplotlib
+streamlit
